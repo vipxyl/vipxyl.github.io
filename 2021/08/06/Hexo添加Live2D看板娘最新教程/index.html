@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="介绍Live2DLive2D是一种应用于电子游戏的绘图渲染技术，由日本Cybernoids公司开发，通过一系列的连续图像和人物建模来生成一种类似二维图像的三维模型，换句话说就是2D的素材实现一定程度的3D效果，但只能是一定程度3D，因为Live 2D人物无法大幅度转身。 准备工作 检查博客主目录下的package.json是否有&quot;hexo-helper-live2d&quot;: &amp;qu">
+  <meta name="description" content="介绍Live2DLive2D是一种应用于电子游戏的绘图渲染技术，由日本Cybernoids公司开发，通过一系列的连续图像和人物建模来生成一种类似二维图像的三维模型，换句话说就是2D的素材实现一定程度的3D效果，但只能是一定程度3D，因为Live 2D人物无法大幅度转身。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo添加Live2D看板娘最新教程">
 <meta property="og:url" content="http://example.com/2021/08/06/Hexo%E6%B7%BB%E5%8A%A0Live2D%E7%9C%8B%E6%9D%BF%E5%A8%98%E6%9C%80%E6%96%B0%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="vipxylの博客">
-<meta property="og:description" content="介绍Live2DLive2D是一种应用于电子游戏的绘图渲染技术，由日本Cybernoids公司开发，通过一系列的连续图像和人物建模来生成一种类似二维图像的三维模型，换句话说就是2D的素材实现一定程度的3D效果，但只能是一定程度3D，因为Live 2D人物无法大幅度转身。 准备工作 检查博客主目录下的package.json是否有&quot;hexo-helper-live2d&quot;: &amp;qu">
+<meta property="og:description" content="介绍Live2DLive2D是一种应用于电子游戏的绘图渲染技术，由日本Cybernoids公司开发，通过一系列的连续图像和人物建模来生成一种类似二维图像的三维模型，换句话说就是2D的素材实现一定程度的3D效果，但只能是一定程度3D，因为Live 2D人物无法大幅度转身。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-08-06T02:42:44.000Z">
-<meta property="article:modified_time" content="2021-08-06T02:46:29.911Z">
+<meta property="article:modified_time" content="2021-08-11T04:03:19.759Z">
 <meta property="article:author" content="vipxyl">
 <meta name="twitter:card" content="summary">
 
@@ -173,10 +173,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-08-06 10:42:44 / 修改时间：10:46:29" itemprop="dateCreated datePublished" datetime="2021-08-06T10:42:44+08:00">2021-08-06</time>
+              <time title="创建时间：2021-08-06 10:42:44" itemprop="dateCreated datePublished" datetime="2021-08-06T10:42:44+08:00">2021-08-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-11 12:03:19" itemprop="dateModified" datetime="2021-08-11T12:03:19+08:00">2021-08-11</time>
+              </span>
 
           
 
@@ -190,6 +196,8 @@
 
       
         <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><h4 id="Live2D"><a href="#Live2D" class="headerlink" title="Live2D"></a>Live2D</h4><p>Live2D是一种应用于电子游戏的绘图渲染技术，由日本Cybernoids公司开发，通过一系列的连续图像和人物建模来生成一种类似二维图像的三维模型，换句话说就是2D的素材实现一定程度的3D效果，但只能是一定程度3D，因为Live 2D人物无法大幅度转身。</p>
+<span id="more"></span>
+
 <h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ul>
 <li>检查博客主目录下的<code>package.json</code>是否有<code>&quot;hexo-helper-live2d&quot;: &quot;^3.0.3&quot;</code>,依赖：</li>
 <li>有的话可以先卸载：<code>npm uninstall hexo-helper-live2d</code></li>
@@ -334,7 +342,7 @@ live2d:
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -368,12 +376,10 @@ live2d:
   </span>
   <span class="author" itemprop="copyrightHolder">vipxyl</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2k字</span>
+  <span class="post-count">博客全站共2.3k字</span>
 </div>
 
         
